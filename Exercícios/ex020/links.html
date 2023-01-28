@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        h1 {
+            width: 300px;
+            height: 100px;
+            padding: 10px;
+            border-width: 10px;
+            border-style:solid;
+            border-color: black;
+        }
+
+        a {
+            color: rgb(255, 0, 0);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        a:visited {
+            color: greenyellow;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+        a::before {
+            content: "sexo";
+        }
+        div {
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://www.youtube.com/watch?v=CiW0GgiyJew" rel="external" target="_blank">Cellbit</a></li>
+        <div></div>
+        <li><a href="https://mangalivre.net/ler/how-to-fight/online/336153/50#/!page16" rel="external" target="_blank">How to fight</a></li>
+        <li><a href="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-2-de-5-40-horas/aulas/modulo-2-2/modulos/capitulo-15-aula-04-pseudo-elementos-em-css/" rel="external" target="_blank">Curso em vídeo</a></li>
+    </ul>
+</body>
+</html>
