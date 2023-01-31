@@ -5,114 +5,134 @@
     src: url(pacote-projeto-d010/fontes/idroid.otf);
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+root {
+    --color1: #216B12; 
+    --color2: #39B81F;
+    --color3: #49EB28;
+    --color4: #85EE70;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
-    padding: 0px;
-    margin: 0px;
-    background-color: #DDDCBB;
+    line-height: 30px;
+    padding: 00px;
+    margin: 00px;
+    background-color:antiquewhite;
 }
 
 header {
-    background-image: linear-gradient(to bottom,#1D8149, #023D1D);
+    background-image: linear-gradient(to bottom, #49EB28, #216B12);
+    margin: 00px;
+    padding: 20px 20px 5px 20px;
+    border: 0px;
+    box-shadow: 5px 0px 20px rgba(0, 0, 0, 0.481);
+}
+header h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+header p {
     margin: auto;
-    margin: 0px;
-    padding: 10px;
-}
-
-header > h1 {
-    color: white;
     text-align: center;
-}
-header > p {
     color: white;
-    text-align: center;
-    font-weight: lighter;
-    margin-bottom: 50px;
+    font-family: 'Roboto', sans-serif;
+    max-width: 400px;
+    padding: 0px 0px 30px 0px;
 }
-header > nav > a {
+header nav a {
     color: white;
     text-decoration: none;
-    margin: 30px;
+    font-family: 'Roboto', sans-serif;
     font-weight: bold;
+    padding: 10px 10px 11.5px 10px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    transition-duration: 0.4s;
+}
+header nav a:hover {
+    background-color: #85EE70;
+    color: black;
 }
 
 
 main {
-    max-width: 800px;
-    min-width: 320;
     background-color: white;
     margin: auto;
-    padding: 20px;
+    margin-top: 00px;
+    border: 00px;
+    max-width: 800px;
+    padding: 10px;
     text-align: justify;
-    box-shadow: 0px 0px 10px;
+    box-shadow: 3px 0px 20px rgba(0, 0, 0, 0.638)
 }
-img {
-    width: 100%;
+main p {
+    text-indent: 40px;
 }
-main > h1 {
+main h2 {
+    background-image: linear-gradient(to right, #48eb2898, #85ee7008);
+    padding: 0px 10px 0px 10px;
+    margin-top: 30px;
     font-family: idroid;
-    color: #2F533E;
-
 }
-main > p {
-    text-indent: 20px;
+main img {
+    width: 100%;
+    height: 100%;
 }
-main img.diminuir {
-    max-width: 350px;
+#diminuir {
     display: block;
     margin: auto;
+    max-width: 350px;
 }
-#primeiraversao > h2 {
-    font-family: idroid;
-    color: #379261;
-    background-image: linear-gradient(to right, rgba(3, 230, 3, 0.368), rgba(255, 255, 255, 0.471));
+#video {
+    background-color: #216B12;
+    position: relative;
+    margin: 0px -10px 0px -10px;
+    padding: 25%;
 }
-#novomascote > h2 {
-    font-family: idroid;
-    color: #379261;
-    background-image: linear-gradient(to right, rgba(3, 230, 3, 0.368), rgba(255, 255, 255, 0.471));
-}
-#primeiraversao  > p{
-    text-indent: 20px;
-}
-#novomascote > p {
-    text-indent: 20px;
-}
-#primeiraversao > nav{
-    text-align: center;
-}
-#novomascote > nav {
-    text-align: center;
-}
-#sabermais > p {
-    text-indent: 20px;
-}
-#midia {
-    background-color: #023D1D;
-}
-#midia > nav {
-    text-align: center;
+iframe {
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate( -50%, -50%);
+
+    width: 95%;
+    height: 95%;
 }
 
-#lista01 {
-    margin: 0px;
-    padding: 0px;
-    width: 500px;
+#extra {
+    background-color: #85EE70;
+    max-width: 760px;
+    margin:auto;
+    border-radius: 5px;
+    padding: 0px 20px;
+    margin-top: 20px;
 }
-
-#sabermais > section > #lista01 > ul {
-    margin: 0px;
-    padding: 0px;
-    width: 500px;
+#extra h3 {
+    background-color: #39B81F;
+    color: white;
+    padding: 5px 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin: 0px -20px;
 }
-#lista02 > ul {
-    margin: 0px;
-    padding: 0px;
-    width: 500px;
-}
-
-main ul {
+#extra > ul {
+    list-style-type: "\1F5F8\00A0\00A0";
     columns: 2;
-    padding: 5px;
     list-style-position: inside;
+
+}
+#extra > p {
+    padding-bottom: 10px;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    color: white;
 }
